@@ -1,0 +1,66 @@
+@use "../utilities/mixins" as *;
+.membership{
+    background-image: url(../../images/hey.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    h1{
+        text-align: center;
+    }
+    margin-top: 2em;
+    &__container{
+        margin-top: 2em;
+        @include flex(center,center);
+        gap: 15em;
+    }
+
+    &__details{
+        margin-top: 3em;
+        h2{
+
+            margin-bottom: 0.5em;
+        }
+
+        input{
+            padding: 1em;
+            border: none;
+        }
+        div{
+          padding: 1em;   
+          h2{
+             font-size: 1.5rem; 
+          }
+        }
+        .button__information{
+            padding: 2em;
+        border: none;
+            background-color: magenta;
+        }
+    }
+    &__element{
+        div{
+margin-top: 5em;
+input{
+    padding: 1em;
+}
+}
+h3{
+    font-size: 1.5rem;
+}
+.button__information{
+    padding: 2em;
+    background-color: magenta;
+    color: white;
+    border: none;
+
+}
+
+    }
+}
+
+
+
+
+
+
+

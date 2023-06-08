@@ -1,0 +1,200 @@
+@use "../utilities/mixins" as *;
+@use "../utilities/base" as *;
+.hero {
+  p{
+    text-align: center;
+  }
+  &__button--black {
+    @include flex(center, center);
+    button {
+      padding: 1em;
+      background-color: magenta;
+      color: white;
+      border: none;
+    }
+  }
+
+  margin-top: 5em;
+  h1 {
+    text-align: center;
+    margin-bottom: 2em;
+    text-decoration: none;
+  }
+  h2 {
+    text-align: center;
+    color: magenta;
+    text-decoration: none;
+  }
+  &__container {
+    gap: 2em;
+    @include flex(space-between, center);
+    &__content {
+      border-radius: 2px 2px 2px solid gray;
+      h1 {
+        text-decoration: none;
+      }
+    }
+  
+  &__card{
+    box-shadow:0 0 6px  lightgray;
+            border-radius: 6px;
+            // width:40%;
+            padding: 2em;
+            margin-top: 2em;
+            height: 40vh;
+  }
+}
+}
+.products {
+  p{
+    text-align: center;
+  }
+  @include flex(space-between, center);
+  &__element {
+    margin-top: 10em;
+    text-align: center;
+    color: magenta;
+  }
+  &__images {
+    @include flex(center, center);
+    padding: 2em;
+    gap: 2em;
+  }
+  &__img{
+    gap: 2em;
+  &__card{
+    box-shadow:0 0 6px  lightgray;
+    border-radius: 6px;
+    // width:40%;
+    padding: 2em;
+    margin-top: 2em;
+  }
+}
+}
+.blogs {
+  h2 {
+    text-align: center;
+    margin-bottom: 2em;
+    color: magenta;
+  }
+  &__container {
+    @include flex(space-between, center);
+    // gap:2em;
+    &__card {
+      box-shadow: 0 0 5px lightgray;
+      width: 19%;
+      border-radius: 5px;
+      &__image {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  &__button--black {
+    @include flex(center, center);
+    button {
+      padding: 1em;
+      background-color: magenta;
+      color: white;
+      border: none;
+    }
+  }
+}
+
+.about {
+  &__element {
+    margin-top: 10em;
+    text-align: center;
+    // text-decoration: underline;
+    margin-bottom: 2em;
+    color: magenta;
+  }
+  &__content {
+    @include flex(space-between, flex-start);
+  }
+  &__image {
+    width: 40%;
+    img {
+      width: 100%;
+    }
+  }
+  &__story {
+    width: 40%;
+    font-size: 2rem;
+  }
+}
+
+.footer {
+  &__container {
+    &__wat {
+      margin-top: 3.5em;
+    }
+  }
+  background-color: gray;
+  &__container {
+    border-radius: 50;
+    margin-top: 3em;
+    @include flex(space-between, flex-start);
+    margin-top: 3em;
+    h1 {
+      color: white;
+    }
+    h2 {
+      color: white;
+      margin-bottom: 2em;
+      span {
+        color: orange;
+      }
+    }
+    h3 {
+      color: white;
+      margin: 1.5em 1.5em;
+    }
+    ul {
+      color: white;
+      text-align: center;
+
+      li {
+        color: white;
+        padding: 0.5em;
+        margin-top: 2em;
+        font-size: 1rem;
+      }
+      .subscribe {
+        margin-top: 1em;
+        padding: 2em;
+        background-color: black;
+        font-size: 0;
+      }
+      span {
+        color: black;
+      }
+    }
+
+    .content__form {
+      .form {
+        font-size: 0;
+        button {
+          color: white;
+          background-color:magenta;
+          padding: 2em;
+          border-radius: 5px;
+          box-shadow: none;
+          border: none;
+        }
+        input {
+          padding: 2em;
+          border-radius: 5px;
+          border-color: none;
+          border: none;
+        }
+      }
+    }
+  }
+  &__socials {
+    ul {
+      @include flex(space-between, flex-start);
+    }
+  }
+}
