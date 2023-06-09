@@ -265,7 +265,7 @@ body {
 }
 .footer__container {
   border-radius: 50;
-  margin-top: 3em;
+  margin-top: 2em;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -278,13 +278,13 @@ body {
 .footer__container h2 {
   color: white;
   margin-bottom: 2em;
+  margin-top: 2em;
 }
 .footer__container h2 span {
   color: orange;
 }
 .footer__container h3 {
   color: white;
-  margin: 1.5em 1.5em;
 }
 .footer__container ul {
   color: white;
@@ -293,7 +293,6 @@ body {
 .footer__container ul li {
   color: white;
   padding: 0.5em;
-  margin-top: 2em;
   font-size: 1rem;
 }
 .footer__container ul .subscribe {
@@ -305,19 +304,40 @@ body {
 .footer__container ul span {
   color: black;
 }
+.footer__container .content__form .payment {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.footer__container .content__form .payment h2 {
+  text-align: center;
+}
 .footer__container .content__form .form {
-  font-size: 0;
+  border: 2px lightgray;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 1rem;
+  background-color: lightcyan;
+}
+.footer__container .content__form .form p {
+  color: black;
+}
+.footer__container .content__form .form li {
+  color: magenta;
+}
+.footer__container .content__form .form h3 {
+  color: magenta;
+  font: 1rem;
 }
 .footer__container .content__form .form button {
   color: white;
   background-color: magenta;
-  padding: 2em;
   border-radius: 5px;
   box-shadow: none;
   border: none;
 }
 .footer__container .content__form .form input {
-  padding: 2em;
   border-radius: 5px;
   border-color: none;
   border: none;
